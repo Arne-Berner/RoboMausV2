@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Parts")(type "KiCad")(uri "${KIPRJMOD}/Parts.kicad_sym")(options "")(descr ""))
   (lib (name "USB4145-03-0230-C_REVA2")(type "KiCad")(uri "${KIPRJMOD}/USB4145-03-0230-C_REVA2/USB4145-03-0230-C_REVA2.kicad_sym")(options "")(descr ""))
+  (lib (name "TS-1187A-B-A-B")(type "KiCad")(uri "/home/arne/FH/Robotik/RobotastischeMausV2/RoboMausV2/TS-1187A-B-A-B/TS-1187A-B-A-B.kicad_sym")(options "")(descr ""))
 )

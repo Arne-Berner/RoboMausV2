@@ -2341,7 +2341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3eb7ab02-9b9c-48ad-aad5-08b7d2548449")
-		(property "Reference" "TP2"
+		(property "Reference" "TP3"
 			(at 35.56 79.5019 0)
 			(effects
 				(font
@@ -2392,7 +2392,7 @@
 		(instances
 			(project ""
 				(path "/0ec4df52-ef34-4d49-9154-02bae5c96110/78e3f72c-305d-44d9-8e6b-dc611c685e57"
-					(reference "TP2")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2750,7 +2750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a87a795-5e14-4a09-9bfe-8c07800c473d")
-		(property "Reference" "TP5"
+		(property "Reference" "TP6"
 			(at 187.96 88.3919 0)
 			(effects
 				(font
@@ -2801,7 +2801,7 @@
 		(instances
 			(project "RoboMaus"
 				(path "/0ec4df52-ef34-4d49-9154-02bae5c96110/78e3f72c-305d-44d9-8e6b-dc611c685e57"
-					(reference "TP5")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -2887,7 +2887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "629f2e30-e31f-44f1-aef6-bf2f43efe485")
-		(property "Reference" "TP3"
+		(property "Reference" "TP4"
 			(at 86.36 83.3119 0)
 			(effects
 				(font
@@ -2938,7 +2938,7 @@
 		(instances
 			(project "RoboMaus"
 				(path "/0ec4df52-ef34-4d49-9154-02bae5c96110/78e3f72c-305d-44d9-8e6b-dc611c685e57"
-					(reference "TP3")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -2954,7 +2954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "698ecf37-ecd7-46d2-b14f-57e3faab340f")
-		(property "Reference" "TP4"
+		(property "Reference" "TP5"
 			(at 137.16 85.8519 0)
 			(effects
 				(font
@@ -3005,7 +3005,7 @@
 		(instances
 			(project "RoboMaus"
 				(path "/0ec4df52-ef34-4d49-9154-02bae5c96110/78e3f72c-305d-44d9-8e6b-dc611c685e57"
-					(reference "TP4")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -3511,7 +3511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bc11997-6d2a-4cb4-bdd2-b78918f8cf34")
-		(property "Reference" "TP6"
+		(property "Reference" "TP7"
 			(at 234.95 84.5819 0)
 			(effects
 				(font
@@ -3562,7 +3562,7 @@
 		(instances
 			(project "RoboMaus"
 				(path "/0ec4df52-ef34-4d49-9154-02bae5c96110/78e3f72c-305d-44d9-8e6b-dc611c685e57"
-					(reference "TP6")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
