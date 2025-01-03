@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Parts")(type "KiCad")(uri "${KIPRJMOD}/Parts.kicad_sym")(options "")(descr ""))
+  (lib (name "USB4145-03-0230-C_REVA2")(type "KiCad")(uri "${KIPRJMOD}/USB4145-03-0230-C_REVA2/USB4145-03-0230-C_REVA2.kicad_sym")(options "")(descr ""))
+)
