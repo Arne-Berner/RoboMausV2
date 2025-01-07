@@ -96,13 +96,18 @@ It's also worth mentioning, that adding test points to any power io seems like a
 - put GND vias as close to the pad as possible and with a big trace to lower inductance
 - you can use space to get some relative measurements. The origin of one of you coordinate systems in the bottom corner will change
 
+
 ### Planning and Assembly
 Using an interactive BOM can be very usefull for any step, but especially the assembly can be structured that way. Checking if your parts are the way they should be, can be done with an interactive html. You can load it on your phone, you can export it for your other projects and you don't need to rewrite anything you don't need. I use the interactive BOM plugin for kicad.
 
 For the actual assembly service on jlcpcb I use a plugin called "Fabrication Toolkit" which you can find in the plugin and content manager in kicad.
 
+### Using Stencils
+It can be usefull to place NPTH - holes that do not have any plating around them - to place the stencil properly. You can then use little pegs through both pcb and stencil to place the stencil very fast and accurately.
+
+
 ### Annoying things you want to know before they happen
-- if you edit your symbols in via schematics, they will only be updated for that one symbol in the schematics. There is no way to save that edit to your actual symbol in the library.
+- if you edit your symbols via schematics, they will only be updated for that one symbol in the schematics. There is no way to save that edit to your actual symbol in the library.
 - if you have another window (e.g. the plugin window in the main menu) you cannot click anything in any other kicad window
 - interactive bom gets cached, so you need to use ikognito mode
 - interactive bom uses the generated bom fields for its fields. Those are only shown, if you updated the schematics editor and imported the changes into the pcb editor
@@ -110,11 +115,11 @@ For the actual assembly service on jlcpcb I use a plugin called "Fabrication Too
 Lastly I would advice you not to use the update pcb with relink too much, if you just used "annotate schematics". This will swap around parts and it's not fun.
 
 ## be a copycat
-- you don't know what parts you need at the beginning. Just write "gyroscope pcb youtube" on your prefered search or youtube.
+- you don't know what parts you need at the beginning. Just write "gyroscope pcb" on your prefered search or youtube to get a good idea, what might be usefull.
 
 ## PCB-Design
 ### 2 layer PCB vs 4 layer PCB
-Truth being told, I have seen very different opinions on this. Some say 4 layers can get much more expensive. This is not necessarily the case when you only use through hole vias, but they are undeniably more expensive. But four layers are also a lot easier and depending on who you ask will make the signals less prone to EMI. 
+Truth being told, I have seen very different opinions on this. Some say 4 layers can get much more expensive. This is not necessarily the case when you only use through hole vias, but they are undeniably more expensive. But four layers are also a lot easier to design and depending on who you ask will make the signals less prone to EMI. 
 
 As a rule of thumb I would say starting with a 2 layer pcb is the way to go and then go up to 4 layers, if you need to. For example when you have different voltages on your board that cannot easily be separate. But there is not much lost when you go for 4 layers from the beginning. Depending on how you click on what option in jlcpcb the price for this 4 layer board was 5$ more instead of the same size with 2 layers.
 
@@ -141,6 +146,7 @@ Any Signal will be able to influence any other Signal next to it. Even though si
 - use test pads
 - PCB layers are stacked in pairs (distance wise)
 
+
 # Resources
 ## Micromouse
 There are some places to look at, but the best resource by far that I could find was [Micromouse Project from UCLA](https://projects.ieeebruins.com/micromouse/).
@@ -157,6 +163,19 @@ I think there should be an honorable mention for the [embedded rustaceans blog](
 
 
 # Next Versions
+## learnings for V1
+- [x] the holes for the case should be 3mm and those for the motors the small size
+- [x] add pinheader for jtag
+- [ ] add markings for + and - in the relevant places
+- [x] gyroscope needs more space, to be able to be used in the middle
+- [x] use jst-ph instead of xh
+- [x] go up one size for smd. There is no benefit in 0403 when I solder it myself
+- [x] use a stencil next time, when working with usb-c and Quad Flat No-Lead chips
+- [ ] build cases for all the sensors/pcbs used
+- [x] I don't need to care too much about interference from the motors for the usb since they will be turned off while flashing.
+- [x] I want the testpoints near the peripheral they are for, because it's easier to test and see what is going on
+- [ ] better naming and silkscreen helps a lot
+
 ## For Version 2
 - [ ] make the LiPos chargeable
 - [ ] use STM32 for the IR Sensors/ADC because they are less noisy
@@ -167,9 +186,11 @@ I did think about adding lipo chargers, but:
 3. There are some nice TC4056 breakout boards which I can use, while running tests on the mouse
 
 I did not use the STM32 for IR Sensors/ADC yet, because the quality of the IR sensor was somewhat sufficient and I needed to move fast, after Version 1 did not work at all.
+
 ## For Version 3
 - [ ] use STM32 for the IR Sensors/ADC because they are less noisy
 - [ ] get NPTH points for better alignment with the stencil
+- [ ] go down to 2 layers so that it is cheaper to replicate
 
 
 ## What went wrong
@@ -212,16 +233,4 @@ Lastly there is a shipping option called "global direct standard line" which is 
 Overall I would say that small projects that don't need more than 2 layers should be done as such. Although 4 layers can give you a lot better signals and smaller boards, so I would always go for a 4 layer board that's smaller than 100x100 over a bigger 2 layer board.
 The assembly is quite cheap, if you don't like soldering and would pay yourself for that time. The only problem is, that they don't have all the parts you might need and as soon as you use extended parts, it'll get really expensive really fast.
 
-# learnings
-- the holes for the case should be 3mm and those for the motors the small size
-- add pinheader for jtag
-- add markings for + and - in the relevant places
-- gyroscope needs more space, to be able to be used in the middle
-- use jst-ph instead of xh
-- go up one size for smd. There is no benefit in 0403 when I solder it myself
-- use a stencil next time, when working with usb-c and Quad Flat No-Lead chips
-- build cases for all the sensors/pcbs used
-- I don't need to care too much about interference from the motors for the usb since they will be turned off while flashing.
-- I want the testpoints near the peripheral they are for, because it's easier to test and see what is going on
-- better naming and silkscreen helps a lot
 
