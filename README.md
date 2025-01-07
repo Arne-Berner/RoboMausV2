@@ -73,6 +73,8 @@ If I were to start again I would probably use [this Import Plugin](https://githu
 
 It's also worth mentioning, that adding test points to any power io seems like a good idea. Using test points in general for critical conditions can help tremendously. But what are critical areas? It depends on your project, but when something does not work, the first thing you check is probably the power supplies.
 
+Lastly I have to admit that in most cases you do not need libraries or imports in a project, because kicads default library is very big. But the terms you might be looking for is not the term you are looking for. 
+
 
 ### Symbols
 - Symbols are not the parts themselves, but a representation for them
@@ -81,6 +83,7 @@ It's also worth mentioning, that adding test points to any power io seems like a
 - Signals that could go in both ways are bidirectional
 - Signals that go only in one way are input or output (which you won't find often and could make your life harder)
 - a lot of warnings can be mitigated by using "passive" for pins, unless you know they are generating/receiving signals
+- most symbols are saved by their "package", so do not look for the specific ic in kicad, but for the packaging
 
 ### Footprints
 - Footprints are the actual parts you would probably find. This abstraction between symbols and footprints confused me at first
