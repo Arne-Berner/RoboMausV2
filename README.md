@@ -83,12 +83,12 @@ Lastly I have to admit that in most cases you do not need libraries or imports i
 - Signals that could go in both ways are bidirectional
 - Signals that go only in one way are input or output (which you won't find often and could make your life harder)
 - a lot of warnings can be mitigated by using "passive" for pins, unless you know they are generating/receiving signals
-- most symbols are saved by their "package", so do not look for the specific ic in kicad, but for the packaging
 
 ### Footprints
 - Footprints are the actual parts you would probably find. This abstraction between symbols and footprints confused me at first
 - drawing them yourself can be a good practice, but the online libraries are much easier to use
 - there is always a section about that on every datasheet
+- most footprints are saved by their "package", so do not look for the specific ic in kicad, but for the packaging
 
 ### PCB
 - One layer for horizontal signals and one layer for vertical signals
