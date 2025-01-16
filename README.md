@@ -191,6 +191,7 @@ I did think about adding lipo chargers, but:
 I did not use the STM32 for IR Sensors/ADC yet, because the quality of the IR sensor was somewhat sufficient and I needed to move fast, after Version 1 did not work at all.
 
 ## For Version 3
+- [ ] connect ground to ground of the battery...
 - [ ] use STM32 for the IR Sensors/ADC because they are less noisy
 - [ ] get NPTH points for better alignment with the stencil
 - [ ] go down to 2 layers so that it is cheaper to replicate
@@ -235,5 +236,6 @@ Lastly there is a shipping option called "global direct standard line" which is 
 
 Overall I would say that small projects that don't need more than 2 layers should be done as such. Although 4 layers can give you a lot better signals and smaller boards, so I would always go for a 4 layer board that's smaller than 100x100 over a bigger 2 layer board.
 The assembly is quite cheap, if you don't like soldering and would pay yourself for that time. The only problem is, that they don't have all the parts you might need and as soon as you use extended parts, it'll get really expensive really fast.
+
 
 
